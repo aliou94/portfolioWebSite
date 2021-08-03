@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .parent {
+            width: 100px;
+            height: 300px;
+            background: yellow;
+            transition-property: width;
+            transition: wi 1s
+        }
+
+
+
+        .parent div:hover {
+            width: 300px;
+        }
+
+        /*.item:hover {*/
+        /*    width: 300px;*/
+        /*}*/
+
+
+
+
+        .item-1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition-property: width;
+            /*transition: width 1s;*/
+            /*transition-delay: 1.5s*/
+        }
+
+        .item-2{
+            width: 100px;
+            height: 100px;
+            transition-property: width;
+            background-color: blue}
+            /*transition: width 1s;*/
+            /*/*transition-delay: 1.5s*
+        }
+
+
+    </style>
+</head>
+<body>
+
+<h1>The transition Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+
+<div class="parent">
+
+<div>
+
+</div>
+    <div class="item item-1"></div>
+    <br/>
+    <div class ="item item-2"></div>
+
+
+
+</div>
+
+</body>
+</html>

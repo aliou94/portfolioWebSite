@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title> Grid Layout</title>
+    <meta name="viewport" content="width=device-width">
+</head>
+<style>
+    body {
+        margin: 0
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+        grid-row : 2/6 ;
+        grid-column : 1/2
+    }
+
+    .content {
+        /*grid-area: content;*/
+        grid-row: 2/4;
+        grid-area: 2/2;
+    }
+
+    /*!*.content2 {*!*/
+    /*!*    grid-row-start: 2;*!*/
+    /*!*    grid-row-end: 4;*!*/
+    /*!*    grid-column-start: 2;*!*/
+    /*!*    grid-column-end: 4;*!*/
+    /*}*/
+
+
+
+    .wrapper {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-gap: 5px;
+        padding:10px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 50px 1fr 1fr 100px;
+    /*    grid-template-areas:*/
+    /*"....... header header"*/
+    /*"sidebar content content"*/
+    /*"footer  footer  footer";*/
+        background-color: #fff;
+        color: #444;
+    }
+
+
+    .box {
+        background-color: #444;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px;
+        border: 1px solid black;
+        font-size: 150%;
+    }
+
+    .header,
+    .footer {
+        background-color: #999;
+        grid-column:1/4
+    }
+</style>
+<body>
+
+<div class="wrapper">
+    <div class="box header">Header</div>
+    <div class="box sidebar">Sidebar</div>
+    <div class="box content">Content
+        <br /> More content than we had before so this column is now quite tall.
+    </div>
+    <div class="box content1">Content
+        <br />
+        More content than we had before so this column is now quite tall.
+    </div>
+    <div class="box content2">Content
+        <br />
+        More content than we had before so this column is now quite tall.
+    </div>
+    <div class="box content3">Content
+        <br />
+        More content than we had before so this column is now quite tall.
+    </div>
+    <div class="box footer">Footer</div>
+</div>
+</body>
+</html>
