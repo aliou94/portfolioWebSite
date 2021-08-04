@@ -10,5 +10,4 @@ for(let i=0; i<array.length; i++){
  if (array[i]===parseFloat(userInput)) position.push(i)
    
 }
-
 console.log(`userInput:${userInput} it occurrs ${position.length} times at index ${position}`)
